@@ -36,7 +36,7 @@ class OpenWestKit:
         try:
             self.device.write(data)
         except Exception as e:
-            print "Unable to write to device:", e
+#            print "Unable to write to device:", e
             self.connect()  # Try to rebind the device
             return 0
         return 1
